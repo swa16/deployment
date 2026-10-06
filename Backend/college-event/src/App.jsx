@@ -39,7 +39,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/register",
+         "https://college-event-backend.onrender.com/api/register",
         {
           method: "POST",
           headers: {
@@ -88,7 +88,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/login",
+        "https://college-event-backend.onrender.com/api/login",
         {
           method: "POST",
           headers: {
