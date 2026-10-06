@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   LOGIN / REGISTER PAGE
+========================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+.auth-card {
+  width: 400px;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.auth-header h1 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.auth-header p {
+  margin: 0;
+  color: #777;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #667eea;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #5568d8;
+}
+
+.submit-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   SUCCESS / ERROR
+========================= */
+
+.success {
+  margin-top: 15px;
+  padding: 10px;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.error {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f8d7da;
+  color: #721c24;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+/* =========================
+   LOGIN / REGISTER SWITCH
+========================= */
+
+.switch-auth {
+  margin-top: 20px;
+  text-align: center;
+  color: #555;
+}
+
+.switch-auth button {
+  border: none;
+  background: none;
+  color: #667eea;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.switch-auth button:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 70px;
+  background: #667eea;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logout-btn {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  color: #667eea;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #eee;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 50px 40px;
+  text-align: center;
+  background: white;
+}
+
+.hero h1 {
+  margin: 0 0 15px;
+  font-size: 38px;
+  color: #333;
+}
+
+.hero p {
+  color: #666;
+  font-size: 17px;
+}
+
+
+/* =========================
+   CARDS SECTION
+========================= */
+
+.cards-section {
+  padding: 30px 40px;
+}
+
+.cards-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.card-content button {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+}
+
+.card-content button:hover {
+  background: #5568d8;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .auth-card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .nav-right {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .cards-section {
+    padding: 20px 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
